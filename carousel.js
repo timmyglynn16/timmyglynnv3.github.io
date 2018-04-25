@@ -1,1 +1,3 @@
-$('.carousel').carousel();
+$('#myCarousel').carousel({
+    pause: 'none'
+})
