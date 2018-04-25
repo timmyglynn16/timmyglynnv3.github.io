@@ -1,21 +1,40 @@
-.carousel {
-    height: 400px;
-    overflow: hidden;
-}
+.carousel { z-index: -99; } /* keeps this behind all content */
 .carousel .item {
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -ms-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+position: fixed; 
+ opacity: 0;
+ left:0 !important;
+width: 100%; height: 100%;
+-webkit-transition: opacity 0.5s;
+-moz-transition: opacity 0.5s;
+-ms-transition: opacity 0.5s;
+-o-transition: opacity 0.5s;
+transition: opacity 0.5s;
 }
-.carousel .active.left, .carousel .active.right {
-    left:0;
-    opacity:0;
-    z-index:2;
+.carousel .one {
+background: url(https://cdn10.phillymag.com/wp-content/uploads/sites/3/2016/02/Image-by-R.-Kennedy-for-VISIT-PHILADELPHIA-940x540.jpg);
+background-size: cover;
+-moz-background-size: cover;
 }
-.carousel .next, .carousel .prev {
-    left:0;
-    opacity:1;
-    z-index:1;
+.carousel .two {
+background: url(https://www.100resilientcities.org/wp-content/uploads/2017/06/Pittsburgh-hero-crop.jpg);
+background-size: cover;
+-moz-background-size: cover;
+}
+.carousel .three {
+background: url(https://www.usnews.com/img/college-photo_18781.jpg);
+background-size: cover;
+-moz-background-size: cover;
+}
+
+.carousel .active {
+opacity: 1 !important;
+}
+
+.carousel .left {
+opacity: 1 !important;
+-webkit-transition: opacity 0.5s  !important;
+-moz-transition: opacity 0.5s  !important;
+-ms-transition: opacity 0.5s  !important;
+-o-transition: opacity 0.5s  !important;
+transition: opacity 0.5s  !important;
 }
