@@ -127,23 +127,22 @@ body, html {
  
   
   <!-- Add Google Maps -->
-<script>
-    function myMap()
-    {
-      myCenter=new google.maps.LatLng(41.878114, -87.629798);
-      var mapOptions= {
-        center:myCenter,
-        zoom:12, scrollwheel: false, draggable: false,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
-      var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-    
-      var marker = new google.maps.Marker({
-        position: myCenter,
-      });
-      marker.setMap(map);
-    }
-  </script>
+  <script>
+      function initMap() {
+        var uluru = {lat: 40.4280292, lng: -79.9754504};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2n761R8ph9q5dDs5Zr-DrQiyZhJ6Xrko&callback=initMap">
+    </script>
   
 </body>
 </html>
