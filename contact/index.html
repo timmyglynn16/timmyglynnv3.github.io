@@ -108,7 +108,12 @@ body, html {
                             <required name="Message" > 
 
               <button class="w3-button w3-black w3-right w3-section w3-opacity-min" type="submit"> 
-                  <a href="timmyglynnv3@gmail.com">Email Me</a> 
+                  <form action="https://formspree.io/timmyglynnv3@gmail.com"
+                    method="POST">
+                    <input type="text" name="name">
+                    <input type="email" name="_replyto">
+                    <input type="submit" value="Send">
+                  </form> 
                 <i class="fa fa-paper-plane"></i> SEND MESSAGE
                 
               </button>
