@@ -40,6 +40,19 @@
         text-transform: uppercase;
     }
 
+    .h4 {
+      font-size: 1.15em;
+      letter-spacing: 0.025em;
+      color: inherit;
+      font-weight: 300;
+      line-height: 1.75em;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+      border-style: solid;
+  }
+
+
+
     .devicon-visualstudio-plain {
       font-size: 7rem
       }
