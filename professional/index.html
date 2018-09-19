@@ -54,6 +54,46 @@ body, html {
 }
 
 
+.bgimg {
+    background-image: url('/w3images/forestbridge.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+
+
+
+
 </style>
 <body>
 
@@ -82,150 +122,51 @@ body, html {
        </div>
      </div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
 
-        <div class="w3-display-position w3-display-middle" style="bottom: 100px; white-space:nowrap;">
-                
-            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> PROFESSIONAL <span class="w3-hide-small"></span>
-        
-        </div>
-
-        <div class="w3-display-position w3-display-middle" style="bottom: 250px; white-space:nowrap;">
-            
-            <span class="w3-center w3-padding-small w3-white w3-large w3-wide w3-animate-opacity">INTERNSHIPS | RESEARCH |<span class="w3-hide-small"> RESUME </span>
-        
-        </div>
-
-        <div class="w3-display-position w3-display-bottommiddle" style="bottom: 100px; white-space:nowrap;">
-                <a href="#about" class="w3-bar-item w3-button w3-padding-small w3-white w3-large w3-wide w3-animate-opacity"></i> ... </a>
-              </div>
-      </div>
-
-<!--https://www.w3schools.com/w3css/w3css_references.asp-->
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-        <!--<h3 class="w3-center">SOFTWARE EXPERIENCE</h3> -->
-        <h3 class="w3-center w3-border-top"> <em>CODE REPOSITORY</em></h3>
-
-          <div class="w3-row ">
-            <div class="w3-quarter w3-container">
-              <h2 style="text-align:center;" ><i class="devicon-java-plain" ></i></h2>
-              <h3 style="text-align:center;"> Java</h3>
-              <a href="https://github.com/timmyglynnv3/jds-assignments"><p>ShootEmUp</p></a>
-              <a href="https://github.com/timmyglynnv3/jds-assignments"><p>BinaryConversion</p></a>
-              <a href="https://github.com/timmyglynnv3/jds-assignments"><p>Tree</p></a>  
+     <div class="bgimg">
+            <div class="topleft">
+              <p>Logo</p>
             </div>
-            <div class="w3-quarter w3-container">
-              <h2 style="text-align:center;"><i class="devicon-cplusplus-plain" ></i></h2>
-              <h3 style="text-align:center;">C++</h3>
-              <a href="https://timmyglynnv3.github.io/software/"><p>assignment1</p></a>
-              <a href="https://timmyglynnv3.github.io/software/"><p>assignment1</p></a>
+            <div class="middle">
+              <h1>COMING SOON</h1>
+              <hr>
+              <p id="demo" style="font-size:30px"></p>
             </div>
-            <div class="w3-quarter w3-container">
-              <h2 style="text-align:center;"><i class="devicon-python-plain" ></i></h2>
-              <h3 style="text-align:center;">Python</h3>
-              <a href="https://timmyglynnv3.github.io/software/"><p>assignment1</p></a>
-              <a href="https://timmyglynnv3.github.io/software/"><p>assignment1</p></a> 
+            <div class="bottomleft">
+              <p>Some text</p>
             </div>
-            <div class="w3-quarter w3-container">
-              <h2 style="text-align:center;"><i class="devicon-html5-plain" ></i></h2>
-              <h3 style="text-align:center;">HTML</h3>
-              <a href="https://github.com/timmyglynnv3/timmyglynnv3.github.io"><p>PersonalWebsite</p></a>
-            </div>
-
-            </div>
-
-        
-            <h3 class="w3-center w3-border-top"><em>DEVELOPING ENVIRONMENTS</em></h3>
-
-            <div class="w3-row ">
-              <div class="w3-quarter w3-container">
-                  <h2 style="text-align:center;"><img src="vscode.png" height= "100"></i> </a></h2> 
-                <h3 style="text-align:center;">Visual Studio</h3>
-                <p>this is where i will describe experience with VS</p>
-              </div>
-              <div class="w3-quarter w3-container">
-                <h2 style="text-align:center;"><img src="eclipse.png" height= "100"> </h2>
-                <h3 style="text-align:center;">Eclipse</h3>
-                <p>this is where i will describe experiencec with Eclipse</p>
-              </div>
-              <div class="w3-quarter w3-container">
-                  <h2 style="text-align:center;"><img src="xcode.png" height= "100"> </h2>
-                <h3 style="text-align:center;">Xcode</h3>
-                <p>this is where i will describe experience with Xcode</p>
-              </div>
-              <div class="w3-quarter w3-container">
-                  <h2 style="text-align:center;"><img src="bash.png" height= "100"> </h2>
-                  <h3 style="text-align:center;">Text Editor</h3>
-                  <p>this is where i will describe experience with BASH</p>
-                </div>
-
-              </div>
-
-
-              <h3 class="w3-center w3-border-top"><em>OPERATING SYSTEMS</em></h3>
-
-              <div class="w3-row ">
-                <div class="w3-third w3-container">
-                  <h2 style="text-align:center;"><i class="devicon-apple-original" ></i> </a></h2> 
-                  <h3 style="text-align:center;">MacOS</h3>
-                  <p>this is where i will describe experience with MacOS</p>
-                </div>
-                <div class="w3-third w3-container">
-                  <h2 style="text-align:center;"><i class="devicon-ubuntu-plain" ></i> </a></h2>
-                  <h3 style="text-align:center;">Ubuntu</h3>
-                  <p>this is where i will describe experiencec with Ubuntu</p>
-                </div>
-                <div class="w3-third w3-container">
-                  <h2 style="text-align:center;"><i class="devicon-windows8-original" ></i> </a></h2>
-                  <h3 style="text-align:center;">Windows</h3>
-                  <p>this is where i will describe experience with Windows</p>
-                </div>
-  
-  
-                </div>
-
-
-
-
-              <h3 class="w3-center w3-border-top"><em>SOFTWARE TOOLS</em></h3>
-
-              <div class="w3-row ">
-                <div class="w3-quarter w3-container">
-                    <h2 style="text-align:center;"> <img src="http://www.columbia.edu/~kl2611/images/matlab-logo.png" height= "100"> </h2>
-                  <h3 style="text-align:center;">Matlab</h3>
-                  <p>explain technical experience with visual studio. screenshots? </p>
-                </div>
-                <div class="w3-quarter w3-container">
-                  <h2 style="text-align:center;"><img src="wireshark.png" height= "100"> </h2>
-                  <h3 style="text-align:center;">Wireshark</h3>
-                  <p>explain technical experience with eclipse. screenshots?</p>
-                </div>
-                <div class="w3-quarter w3-container">
-                    <h2 style="text-align:center;"><img src="github.png"  height= "100"> </h2>
-                    <h3 style="text-align:center;">GitHub</h3>
-                    <p>explain technical experience with wireshark. screenshots?</p>
-                </div>
-                <div class="w3-quarter w3-container">
-                    <h2 style="text-align:center;"><img src="arduino.png"  height= "100"> </h2>
-                    <h3> </h3>
-                    <h3 style="text-align:center;">Arduino</h3> 
-                    <p>explain technical experience with matlab. screenshots?</p>
-                </div>  
-  
-  
-              </div>
-
-
-        
-
           </div>
-
-        </div>
-      
-        </div>
-      </div>
+          
+          <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+          
+          // Update the count down every 1 second
+          var countdownfunction = setInterval(function() {
+          
+              // Get todays date and time
+              var now = new Date().getTime();
+              
+              // Find the distance between now an the count down date
+              var distance = countDownDate - now;
+              
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+              
+              // Output the result in an element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+              
+              // If the count down is over, write some text 
+              if (distance < 0) {
+                  clearInterval(countdownfunction);
+                  document.getElementById("demo").innerHTML = "EXPIRED";
+              }
+          }, 1000);
+          </script>
 
 
       <!-- Change style of navbar on scroll -->
